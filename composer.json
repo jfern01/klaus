@@ -1,0 +1,20 @@
+{
+    "name": "jfern01/klaus",
+    "type": "standard",
+    "description": "Wrapper for Fishbowl API.",
+    "homepage": "https://crosbyinteractive.com",
+    "license": "MIT",
+    "require" : {
+        "jms/serializer": "^1.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Ci\\Klaus\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Ci\\Klaus\\": "tests/"
+        }
+    }
+}
