@@ -66,7 +66,7 @@ class Account extends Object
      *
      * @return self
      */
-    protected function setName($name)
+    public function setName($name)
     {
         $this->name = $name;
 
@@ -90,7 +90,7 @@ class Account extends Object
      *
      * @return self
      */
-    protected function setAccountingId($accountingId)
+    public function setAccountingId($accountingId)
     {
         $this->accountingId = $accountingId;
 
@@ -114,7 +114,7 @@ class Account extends Object
      *
      * @return self
      */
-    protected function setAccountType($accountType)
+    public function setAccountType($accountType)
     {
         $this->accountType = $accountType;
 
@@ -138,7 +138,7 @@ class Account extends Object
      *
      * @return self
      */
-    protected function setBalance($balance)
+    public function setBalance($balance)
     {
         $this->balance = $balance;
 

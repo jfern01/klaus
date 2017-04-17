@@ -96,7 +96,7 @@ class Carton extends Object
      *
      * @return self
      */
-    protected function setId($id)
+    public function setId($id)
     {
         $this->id = $id;
 
@@ -120,7 +120,7 @@ class Carton extends Object
      *
      * @return self
      */
-    protected function setShipId($shipId)
+    public function setShipId($shipId)
     {
         $this->shipId = $shipId;
 
@@ -144,7 +144,7 @@ class Carton extends Object
      *
      * @return self
      */
-    protected function setCartonNum($cartonNum)
+    public function setCartonNum($cartonNum)
     {
         $this->cartonNum = $cartonNum;
 
@@ -168,7 +168,7 @@ class Carton extends Object
      *
      * @return self
      */
-    protected function setTrackingNum($trackingNum)
+    public function setTrackingNum($trackingNum)
     {
         $this->trackingNum = $trackingNum;
 
@@ -192,7 +192,7 @@ class Carton extends Object
      *
      * @return self
      */
-    protected function setFreightWeight($freightWeight)
+    public function setFreightWeight($freightWeight)
     {
         $this->freightWeight = $freightWeight;
 
@@ -216,7 +216,7 @@ class Carton extends Object
      *
      * @return self
      */
-    protected function setFreightAmount($freightAmount)
+    public function setFreightAmount($freightAmount)
     {
         $this->freightAmount = $freightAmount;
 
@@ -240,7 +240,7 @@ class Carton extends Object
      *
      * @return self
      */
-    protected function setShippingItems(array $shippingItems)
+    public function setShippingItems(array $shippingItems)
     {
         $this->shippingItems = $shippingItems;
 

@@ -77,7 +77,7 @@ class ContactInformation extends Object
      *
      * @return self
      */
-    protected function setContactName($contactName)
+    public function setContactName($contactName)
     {
         $this->contactName = $contactName;
 
@@ -101,7 +101,7 @@ class ContactInformation extends Object
      *
      * @return self
      */
-    protected function setContactId($contactId)
+    public function setContactId($contactId)
     {
         $this->contactId = $contactId;
 
@@ -125,7 +125,7 @@ class ContactInformation extends Object
      *
      * @return self
      */
-    protected function setType($type)
+    public function setType($type)
     {
         $this->type = $type;
 
@@ -149,7 +149,7 @@ class ContactInformation extends Object
      *
      * @return self
      */
-    protected function setData($data)
+    public function setData($data)
     {
         $this->data = $data;
 
@@ -173,7 +173,7 @@ class ContactInformation extends Object
      *
      * @return self
      */
-    protected function setDefault($default)
+    public function setDefault($default)
     {
         $this->default = $default;
 

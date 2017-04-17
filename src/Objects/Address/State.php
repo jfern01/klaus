@@ -67,7 +67,7 @@ class State extends Object
      *
      * @return self
      */
-    protected function setId($id)
+    public function setId($id)
     {
         $this->id = $id;
 
@@ -91,7 +91,7 @@ class State extends Object
      *
      * @return self
      */
-    protected function setCode($code)
+    public function setCode($code)
     {
         $this->code = $code;
 
@@ -115,7 +115,7 @@ class State extends Object
      *
      * @return self
      */
-    protected function setName($name)
+    public function setName($name)
     {
         $this->name = $name;
 
@@ -139,7 +139,7 @@ class State extends Object
      *
      * @return self
      */
-    protected function setCountryId($countryId)
+    public function setCountryId($countryId)
     {
         $this->countryId = $countryId;
 

@@ -96,7 +96,7 @@ class Uom extends Object
      *
      * @return self
      */
-    protected function setUomId($uomId)
+    public function setUomId($uomId)
     {
         $this->uomId = $uomId;
 
@@ -120,7 +120,7 @@ class Uom extends Object
      *
      * @return self
      */
-    protected function setName($name)
+    public function setName($name)
     {
         $this->name = $name;
 
@@ -144,7 +144,7 @@ class Uom extends Object
      *
      * @return self
      */
-    protected function setCode($code)
+    public function setCode($code)
     {
         $this->code = $code;
 
@@ -168,7 +168,7 @@ class Uom extends Object
      *
      * @return self
      */
-    protected function setIntegral($integral)
+    public function setIntegral($integral)
     {
         $this->integral = $integral;
 
@@ -192,7 +192,7 @@ class Uom extends Object
      *
      * @return self
      */
-    protected function setActive($active)
+    public function setActive($active)
     {
         $this->active = $active;
 
@@ -216,7 +216,7 @@ class Uom extends Object
      *
      * @return self
      */
-    protected function setType($type)
+    public function setType($type)
     {
         $this->type = $type;
 
@@ -240,7 +240,7 @@ class Uom extends Object
      *
      * @return self
      */
-    protected function setUomConversions(array $uomConversions)
+    public function setUomConversions(array $uomConversions)
     {
         $this->uomConversions = $uomConversions;
 

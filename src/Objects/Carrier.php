@@ -41,7 +41,7 @@ class Carrier extends Object
      *
      * @return self
      */
-    protected function setName($name)
+    public function setName($name)
     {
         $this->name = $name;
 

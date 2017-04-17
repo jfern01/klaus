@@ -32,7 +32,7 @@ trait UnitOfMeasure
      *
      * @return self
      */
-    protected function setUom(Uom $uom)
+    public function setUom(Uom $uom)
     {
         $this->uom = $uom;
 

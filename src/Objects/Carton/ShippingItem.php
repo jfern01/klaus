@@ -184,7 +184,7 @@ class ShippingItem extends Object
      *
      * @return self
      */
-    protected function setShipItemId($shipItemId)
+    public function setShipItemId($shipItemId)
     {
         $this->shipItemId = $shipItemId;
 
@@ -208,7 +208,7 @@ class ShippingItem extends Object
      *
      * @return self
      */
-    protected function setProductNumber($productNumber)
+    public function setProductNumber($productNumber)
     {
         $this->productNumber = $productNumber;
 
@@ -232,7 +232,7 @@ class ShippingItem extends Object
      *
      * @return self
      */
-    protected function setProductDescription($productDescription)
+    public function setProductDescription($productDescription)
     {
         $this->productDescription = $productDescription;
 
@@ -256,7 +256,7 @@ class ShippingItem extends Object
      *
      * @return self
      */
-    protected function setQtyShipped($qtyShipped)
+    public function setQtyShipped($qtyShipped)
     {
         $this->qtyShipped = $qtyShipped;
 
@@ -280,7 +280,7 @@ class ShippingItem extends Object
      *
      * @return self
      */
-    protected function setCost($cost)
+    public function setCost($cost)
     {
         $this->cost = $cost;
 
@@ -304,7 +304,7 @@ class ShippingItem extends Object
      *
      * @return self
      */
-    protected function setSku($sku)
+    public function setSku($sku)
     {
         $this->sku = $sku;
 
@@ -328,7 +328,7 @@ class ShippingItem extends Object
      *
      * @return self
      */
-    protected function setUpc($upc)
+    public function setUpc($upc)
     {
         $this->upc = $upc;
 
@@ -352,7 +352,7 @@ class ShippingItem extends Object
      *
      * @return self
      */
-    protected function setOrderItemId($orderItemId)
+    public function setOrderItemId($orderItemId)
     {
         $this->orderItemId = $orderItemId;
 
@@ -376,7 +376,7 @@ class ShippingItem extends Object
      *
      * @return self
      */
-    protected function setOrderLineItem($orderLineItem)
+    public function setOrderLineItem($orderLineItem)
     {
         $this->orderLineItem = $orderLineItem;
 
@@ -400,7 +400,7 @@ class ShippingItem extends Object
      *
      * @return self
      */
-    protected function setCartonName($cartonName)
+    public function setCartonName($cartonName)
     {
         $this->cartonName = $cartonName;
 
@@ -424,7 +424,7 @@ class ShippingItem extends Object
      *
      * @return self
      */
-    protected function setCartonId($cartonId)
+    public function setCartonId($cartonId)
     {
         $this->cartonId = $cartonId;
 
@@ -448,7 +448,7 @@ class ShippingItem extends Object
      *
      * @return self
      */
-    protected function setTagNum($tagNum)
+    public function setTagNum($tagNum)
     {
         $this->tagNum = $tagNum;
 
@@ -472,7 +472,7 @@ class ShippingItem extends Object
      *
      * @return self
      */
-    protected function setWeight($weight)
+    public function setWeight($weight)
     {
         $this->weight = $weight;
 
@@ -496,7 +496,7 @@ class ShippingItem extends Object
      *
      * @return self
      */
-    protected function setWeightUom(WeightUom $weightUom)
+    public function setWeightUom(WeightUom $weightUom)
     {
         $this->weightUom = $weightUom;
 
@@ -520,7 +520,7 @@ class ShippingItem extends Object
      *
      * @return self
      */
-    protected function setDisplayWeight($displayWeight)
+    public function setDisplayWeight($displayWeight)
     {
         $this->displayWeight = $displayWeight;
 
@@ -544,7 +544,7 @@ class ShippingItem extends Object
      *
      * @return self
      */
-    protected function setDisplayWeightUom(DisplayWeightUom $displayWeightUom)
+    public function setDisplayWeightUom(DisplayWeightUom $displayWeightUom)
     {
         $this->displayWeightUom = $displayWeightUom;
 
@@ -568,7 +568,7 @@ class ShippingItem extends Object
      *
      * @return self
      */
-    protected function setTracking($tracking)
+    public function setTracking($tracking)
     {
         $this->tracking = $tracking;
 

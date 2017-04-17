@@ -42,7 +42,7 @@ class Contacts extends Object
      *
      * @return self
      */
-    protected function setContacts(array $contacts)
+    public function setContacts(array $contacts)
     {
         $this->contacts = $contacts;
 

@@ -76,7 +76,7 @@ class AddressInformation extends Object
      *
      * @return self
      */
-    protected function setId($id)
+    public function setId($id)
     {
         $this->id = $id;
 
@@ -100,7 +100,7 @@ class AddressInformation extends Object
      *
      * @return self
      */
-    protected function setName($name)
+    public function setName($name)
     {
         $this->name = $name;
 
@@ -124,7 +124,7 @@ class AddressInformation extends Object
      *
      * @return self
      */
-    protected function setData($data)
+    public function setData($data)
     {
         $this->data = $data;
 
@@ -148,7 +148,7 @@ class AddressInformation extends Object
      *
      * @return self
      */
-    protected function setDefault($default)
+    public function setDefault($default)
     {
         $this->default = $default;
 
@@ -172,7 +172,7 @@ class AddressInformation extends Object
      *
      * @return self
      */
-    protected function setType($type)
+    public function setType($type)
     {
         $this->type = $type;
 

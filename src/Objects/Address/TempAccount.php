@@ -49,7 +49,7 @@ class TempAccount extends Object
      *
      * @return self
      */
-    protected function setId($id)
+    public function setId($id)
     {
         $this->id = $id;
 
@@ -73,7 +73,7 @@ class TempAccount extends Object
      *
      * @return self
      */
-    protected function setType($type)
+    public function setType($type)
     {
         $this->type = $type;
 

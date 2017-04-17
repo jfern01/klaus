@@ -101,7 +101,7 @@ class CreditCard extends Object
      *
      * @return self
      */
-    protected function setCardNumber($cardNumber)
+    public function setCardNumber($cardNumber)
     {
         $this->cardNumber = $cardNumber;
 
@@ -125,7 +125,7 @@ class CreditCard extends Object
      *
      * @return self
      */
-    protected function setCardExpMonth($cardExpMonth)
+    public function setCardExpMonth($cardExpMonth)
     {
         $this->cardExpMonth = $cardExpMonth;
 
@@ -149,7 +149,7 @@ class CreditCard extends Object
      *
      * @return self
      */
-    protected function setCardExpYear($cardExpYear)
+    public function setCardExpYear($cardExpYear)
     {
         $this->cardExpYear = $cardExpYear;
 
@@ -173,7 +173,7 @@ class CreditCard extends Object
      *
      * @return self
      */
-    protected function setSecurityCode($securityCode)
+    public function setSecurityCode($securityCode)
     {
         $this->securityCode = $securityCode;
 
@@ -197,7 +197,7 @@ class CreditCard extends Object
      *
      * @return self
      */
-    protected function setNameOnCard($nameOnCard)
+    public function setNameOnCard($nameOnCard)
     {
         $this->nameOnCard = $nameOnCard;
 
@@ -221,7 +221,7 @@ class CreditCard extends Object
      *
      * @return self
      */
-    protected function setCardAddress($cardAddress)
+    public function setCardAddress($cardAddress)
     {
         $this->cardAddress = $cardAddress;
 
@@ -245,7 +245,7 @@ class CreditCard extends Object
      *
      * @return self
      */
-    protected function setCardZipCode($cardZipCode)
+    public function setCardZipCode($cardZipCode)
     {
         $this->cardZipCode = $cardZipCode;
 
@@ -269,7 +269,7 @@ class CreditCard extends Object
      *
      * @return self
      */
-    protected function setCardCountryCode($cardCountryCode)
+    public function setCardCountryCode($cardCountryCode)
     {
         $this->cardCountryCode = $cardCountryCode;
 

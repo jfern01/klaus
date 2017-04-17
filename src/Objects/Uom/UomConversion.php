@@ -86,7 +86,7 @@ class UomConversion extends Object
      *
      * @return self
      */
-    protected function setMainUomId($mainUomId)
+    public function setMainUomId($mainUomId)
     {
         $this->mainUomId = $mainUomId;
 
@@ -110,7 +110,7 @@ class UomConversion extends Object
      *
      * @return self
      */
-    protected function setToUomId($toUomId)
+    public function setToUomId($toUomId)
     {
         $this->toUomId = $toUomId;
 
@@ -134,7 +134,7 @@ class UomConversion extends Object
      *
      * @return self
      */
-    protected function setToUomCode($toUomCode)
+    public function setToUomCode($toUomCode)
     {
         $this->toUomCode = $toUomCode;
 
@@ -158,7 +158,7 @@ class UomConversion extends Object
      *
      * @return self
      */
-    protected function setConversionMultiply($conversionMultiply)
+    public function setConversionMultiply($conversionMultiply)
     {
         $this->conversionMultiply = $conversionMultiply;
 
@@ -182,7 +182,7 @@ class UomConversion extends Object
      *
      * @return self
      */
-    protected function setConversionFactor($conversionFactor)
+    public function setConversionFactor($conversionFactor)
     {
         $this->conversionFactor = $conversionFactor;
 
@@ -206,7 +206,7 @@ class UomConversion extends Object
      *
      * @return self
      */
-    protected function setToUomIsIntegral($toUomIsIntegral)
+    public function setToUomIsIntegral($toUomIsIntegral)
     {
         $this->toUomIsIntegral = $toUomIsIntegral;
 

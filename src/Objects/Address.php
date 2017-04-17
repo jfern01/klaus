@@ -159,7 +159,7 @@ class Address extends Object
      *
      * @return self
      */
-    protected function setId($id)
+    public function setId($id)
     {
         $this->id = $id;
 
@@ -183,7 +183,7 @@ class Address extends Object
      *
      * @return self
      */
-    protected function setTempAccount(TempAccount $tempAccount)
+    public function setTempAccount(TempAccount $tempAccount)
     {
         $this->tempAccount = $tempAccount;
 
@@ -207,7 +207,7 @@ class Address extends Object
      *
      * @return self
      */
-    protected function setName($name)
+    public function setName($name)
     {
         $this->name = $name;
 
@@ -231,7 +231,7 @@ class Address extends Object
      *
      * @return self
      */
-    protected function setAttn($attn)
+    public function setAttn($attn)
     {
         $this->attn = $attn;
 
@@ -255,7 +255,7 @@ class Address extends Object
      *
      * @return self
      */
-    protected function setStreet($street)
+    public function setStreet($street)
     {
         $this->street = $street;
 
@@ -279,7 +279,7 @@ class Address extends Object
      *
      * @return self
      */
-    protected function setCity($city)
+    public function setCity($city)
     {
         $this->city = $city;
 
@@ -303,7 +303,7 @@ class Address extends Object
      *
      * @return self
      */
-    protected function setZip($zip)
+    public function setZip($zip)
     {
         $this->zip = $zip;
 
@@ -327,7 +327,7 @@ class Address extends Object
      *
      * @return self
      */
-    protected function setLocationGroupId($locationGroupId)
+    public function setLocationGroupId($locationGroupId)
     {
         $this->locationGroupId = $locationGroupId;
 
@@ -351,7 +351,7 @@ class Address extends Object
      *
      * @return self
      */
-    protected function setDefault($default)
+    public function setDefault($default)
     {
         $this->default = $default;
 
@@ -375,7 +375,7 @@ class Address extends Object
      *
      * @return self
      */
-    protected function setResidential($residential)
+    public function setResidential($residential)
     {
         $this->residential = $residential;
 
@@ -399,7 +399,7 @@ class Address extends Object
      *
      * @return self
      */
-    protected function setType($type)
+    public function setType($type)
     {
         $this->type = $type;
 
@@ -423,7 +423,7 @@ class Address extends Object
      *
      * @return self
      */
-    protected function setState(State $state)
+    public function setState(State $state)
     {
         $this->state = $state;
 
@@ -447,7 +447,7 @@ class Address extends Object
      *
      * @return self
      */
-    protected function setCountry(Country $country)
+    public function setCountry(Country $country)
     {
         $this->country = $country;
 
@@ -471,7 +471,7 @@ class Address extends Object
      *
      * @return self
      */
-    protected function setAddressInformationList(array $addressInformationList)
+    public function setAddressInformationList(array $addressInformationList)
     {
         $this->addressInformationList = $addressInformationList;
 
