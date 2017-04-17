@@ -1,5 +1,5 @@
 <?php
-namespace Ci\Klaus\Objects\ShippingItem;
+namespace Ci\Klaus\Objects\Carton\ShippingItem;
 
 use Ci\Klaus\Object;
 use Ci\Klaus\Objects\Utils\UnitOfMeasure;

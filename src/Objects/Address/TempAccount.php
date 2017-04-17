@@ -15,6 +15,8 @@ use JMS\Serializer\Annotation\XmlRoot;
 class TempAccount extends Object
 {
     /**
+     * @var int
+     *
      * @SerializedName("ID")
      * @Type("integer")
      * @XmlElement(cdata=false)
@@ -22,29 +24,59 @@ class TempAccount extends Object
     protected $id;
 
     /**
+     * @var int
+     *
      * @SerializedName("Type")
      * @Type("integer")
      * @XmlElement(cdata=false)
      */
     protected $type;
 
+    /**
+     * Gets the value of id.
+     *
+     * @return int
+     */
     public function getId()
     {
         return $this->id;
     }
 
-    public function setId($id)
+    /**
+     * Sets the value of id.
+     *
+     * @param int $id the id
+     *
+     * @return self
+     */
+    protected function setId($id)
     {
         $this->id = $id;
-    }   
 
+        return $this;
+    }
+
+    /**
+     * Gets the value of type.
+     *
+     * @return int
+     */
     public function getType()
     {
         return $this->type;
     }
 
-    public function setType($type)
+    /**
+     * Sets the value of type.
+     *
+     * @param int $type the type
+     *
+     * @return self
+     */
+    protected function setType($type)
     {
         $this->type = $type;
+
+        return $this;
     }
 }

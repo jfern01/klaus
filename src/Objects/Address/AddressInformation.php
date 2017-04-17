@@ -15,6 +15,8 @@ use JMS\Serializer\Annotation\XmlRoot;
 class AddressInformation extends Object
 {
     /**
+     * @var int
+     *
      * @SerializedName("ID")
      * @Type("integer")
      * @XmlElement(cdata=false)
@@ -22,6 +24,8 @@ class AddressInformation extends Object
     protected $id;
 
     /**
+     * @var string
+     *
      * @SerializedName("Name")
      * @Type("string")
      * @XmlElement(cdata=false)
@@ -29,6 +33,8 @@ class AddressInformation extends Object
     protected $name;
 
     /**
+     * @var string
+     *
      * @SerializedName("Data")
      * @Type("string")
      * @XmlElement(cdata=false)
@@ -36,6 +42,8 @@ class AddressInformation extends Object
     protected $data;
 
     /**
+     * @var bool
+     *
      * @SerializedName("Default")
      * @Type("boolean")
      * @XmlElement(cdata=false)
@@ -43,59 +51,131 @@ class AddressInformation extends Object
     protected $default;
 
     /**
+     * @var string
+     *
      * @SerializedName("Type")
      * @Type("string")
      * @XmlElement(cdata=false)
      */
     protected $type;
 
+    /**
+     * Gets the value of id.
+     *
+     * @return int
+     */
     public function getId()
     {
         return $this->id;
     }
 
-    public function setId($id)
+    /**
+     * Sets the value of id.
+     *
+     * @param int $id the id
+     *
+     * @return self
+     */
+    protected function setId($id)
     {
         $this->id = $id;
+
+        return $this;
     }
 
+    /**
+     * Gets the value of name.
+     *
+     * @return string
+     */
     public function getName()
     {
         return $this->name;
     }
 
-    public function setName($name)
+    /**
+     * Sets the value of name.
+     *
+     * @param string $name the name
+     *
+     * @return self
+     */
+    protected function setName($name)
     {
         $this->name = $name;
+
+        return $this;
     }
 
+    /**
+     * Gets the value of data.
+     *
+     * @return string
+     */
     public function getData()
     {
         return $this->data;
     }
 
-    public function setData($data)
+    /**
+     * Sets the value of data.
+     *
+     * @param string $data the data
+     *
+     * @return self
+     */
+    protected function setData($data)
     {
         $this->data = $data;
+
+        return $this;
     }
 
+    /**
+     * Gets the value of default.
+     *
+     * @return bool
+     */
     public function getDefault()
     {
         return $this->default;
     }
 
-    public function setDefault($default)
+    /**
+     * Sets the value of default.
+     *
+     * @param bool $default the default
+     *
+     * @return self
+     */
+    protected function setDefault($default)
     {
         $this->default = $default;
+
+        return $this;
     }
 
+    /**
+     * Gets the value of type.
+     *
+     * @return string
+     */
     public function getType()
     {
         return $this->type;
     }
 
-    public function setType($type)
+    /**
+     * Sets the value of type.
+     *
+     * @param string $type the type
+     *
+     * @return self
+     */
+    protected function setType($type)
     {
         $this->type = $type;
+
+        return $this;
     }
 } 

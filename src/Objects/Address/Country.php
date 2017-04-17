@@ -15,6 +15,8 @@ use JMS\Serializer\Annotation\XmlRoot;
 class Country extends Object
 {
     /**
+     * @var int
+     *
      * @SerializedName("ID")
      * @Type("integer")
      * @XmlElement(cdata=false)
@@ -22,6 +24,8 @@ class Country extends Object
     protected $id;
 
     /**
+     * @var string
+     *
      * @SerializedName("Code")
      * @Type("string")
      * @XmlElement(cdata=false)
@@ -29,39 +33,83 @@ class Country extends Object
     protected $code;
 
     /**
+     * @var string
+     *
      * @SerializedName("Name")
      * @Type("string")
      * @XmlElement(cdata=false)
      */
     protected $name;
 
+    /**
+     * Gets the value of id.
+     *
+     * @return int
+     */
     public function getId()
     {
         return $this->id;
     }
 
-    public function setId($id)
+    /**
+     * Sets the value of id.
+     *
+     * @param int $id the id
+     *
+     * @return self
+     */
+    protected function setId($id)
     {
         $this->id = $id;
+
+        return $this;
     }
 
+    /**
+     * Gets the value of code.
+     *
+     * @return string
+     */
     public function getCode()
     {
         return $this->code;
     }
 
-    public function setCode($code)
+    /**
+     * Sets the value of code.
+     *
+     * @param string $code the code
+     *
+     * @return self
+     */
+    protected function setCode($code)
     {
         $this->code = $code;
+
+        return $this;
     }
 
+    /**
+     * Gets the value of name.
+     *
+     * @return string
+     */
     public function getName()
     {
         return $this->name;
     }
 
-    public function setName($name)
+    /**
+     * Sets the value of name.
+     *
+     * @param string $name the name
+     *
+     * @return self
+     */
+    protected function setName($name)
     {
         $this->name = $name;
+
+        return $this;
     }
 }

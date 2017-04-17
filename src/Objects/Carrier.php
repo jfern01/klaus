@@ -16,19 +16,35 @@ use JMS\Serializer\Annotation\XmlList;
 class Carrier extends Object
 {
     /**
+     * @var string
+     *
      * @SerializedName("Name")
-     * @Type("Name")
+     * @Type("string")
      * @XmlElement(cdata=false)
      */
     protected $name;
 
+    /**
+     * Gets the value of name.
+     *
+     * @return string
+     */
     public function getName()
     {
         return $this->name;
     }
 
-    public function setName($name)
+    /**
+     * Sets the value of name.
+     *
+     * @param string $name the name
+     *
+     * @return self
+     */
+    protected function setName($name)
     {
         $this->name = $name;
+
+        return $this;
     }
 }
