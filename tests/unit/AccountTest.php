@@ -31,9 +31,9 @@ class AccountTest extends \PHPUnit_Framework_TestCase
     {
         $account = $this->serializer->deserialize(file_get_contents(__DIR__ . '/xml/Account.xml'), 'Ci\Klaus\Objects\Account', 'xml');
 
-        $this->assertEquals($account->getName(), 'Cost Variance');
-        $this->assertEquals($account->getAccountingId(), '8000001B-1310422643');
-        $this->assertEquals($account->getAccountType(), 12);
-        $this->assertEquals($account->getBalance(), '0');
+        $this->assertEquals('Cost Variance', $account->getName());
+        $this->assertEquals('8000001B-1310422643', $account->getAccountingId());
+        $this->assertEquals(12, $account->getAccountType());
+        $this->assertEquals('0', $account->getBalance());
     }
 }

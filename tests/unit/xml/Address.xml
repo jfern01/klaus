@@ -1,0 +1,36 @@
+<Address>
+    <ID>123</ID>
+    <Temp-Account>
+        <ID>123</ID>
+        <Type>10</Type>
+    </Temp-Account>
+    <Name>Main Office</Name>
+    <Attn>Attn</Attn>
+    <Street>123 Neverland dr.</Street>
+    <City>Murray</City>
+    <Zip>84121</Zip>
+    <LocationGroupID>123</LocationGroupID>
+    <Default>true</Default>
+    <Residential>false</Residential>
+    <Type>Main Office</Type>
+    <State>
+        <ID>123</ID>
+        <Code>UT</Code>
+        <Name>Utah</Name>
+        <CountryID>2</CountryID>
+    </State>
+    <Country>
+        <ID>123</ID>
+        <Code>US</Code>
+        <Name>United States</Name>
+    </Country>
+    <AddressInformationList>
+        <AddressInformation>
+            <ID>123</ID>
+            <Name>Main Office</Name>
+            <Data>Address Data</Data>
+            <Default>true</Default>
+            <Type>Home</Type>
+        </AddressInformation>
+    </AddressInformationList>
+</Address>
