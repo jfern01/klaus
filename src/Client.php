@@ -2,7 +2,7 @@
 namespace Ci\Klaus;
 
 use Ci\Klaus\Request;
-use Ci\Klaus\Request\LoginRequest;
+use Ci\Klaus\Requests\LoginRequest;
 use JMS\Serializer\SerializerBuilder;
 
 class Client
@@ -14,6 +14,8 @@ class Client
     protected $loginRequest;
 
     protected $resource = null;
+
+    protected $response;
 
     public function __construct($appId, $appName, $appDescription = '')
     {
@@ -108,14 +110,27 @@ class Client
         var_dump($data);
 
         //Send packed length
-        //fwrite($this->resource, pack('N', strlen($data)), 4);
+        fwrite($this->resource, pack('N', strlen($data)), 4);
 
         //Send request
-        //fwrite($this->resource, $data);
+        fwrite($this->resource, $data);
+
+        echo 'request sent' . PHP_EOL;
     }
 
     protected function receive()
     {
-        var_dump(stream_get_contents($this->resource, -1, 4));
+        $packed_length = stream_get_contents($this->resource, 4);
+        $response = simplexml_load_string(stream_get_contents($this->resource, unpack('Nlen', $packed_length)['len']));
+
+        var_dump($response->FbiMsgsRs->LoginRs);
+
+        $this->response = $this->serializer->deserialize(
+            $response->FbiMsgsRs->LoginRs->asXML(), 
+            'Ci\Klaus\Responses\LoginResponse',
+            'xml'
+        );
+
+        var_dump($this->response);
     }
 }
