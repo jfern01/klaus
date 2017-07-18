@@ -14,6 +14,8 @@ use JMS\Serializer\Annotation\XmlRoot;
  */
 class LoginRequest extends Request
 {
+    const XML_RESPONSE_NODE = 'LoginRs';
+
     /**
      * @var int
      *
@@ -177,4 +179,4 @@ class LoginRequest extends Request
 
         return $this;
     }
-} 
+}
