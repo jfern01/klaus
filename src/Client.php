@@ -349,7 +349,7 @@ class Client
         $xml = stream_get_contents($this->resource, unpack('Nlen', $packed)['len']);
 
         //Parse XML
-        $this->response = simplexml_load_string($xml);
+        $this->response = simplexml_load_string(utf8_encode($xml));
 
         $statusCode = (int) $this->response->FbiMsgsRs->attributes()['statusCode'];
 
